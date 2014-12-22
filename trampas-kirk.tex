@@ -114,13 +114,13 @@ trampas.kirk@gmail.com\\
 
 \begin{resumeblock}{Technical Skills}
 
-% \resumeitem{Skills/Tools}{Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Ahchaius), git, \LaTeX, FIX, Java, JMS, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, IntelliJ IDEA, Eclipse, Hibernate, h2, XPath, cobertura, AutoCAD, SVN, perforce, subersion}
+% \resumeitem{Skills/Tools}{Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Ahchaius), git, \LaTeX, FIX, Java, JMS, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, IntelliJ IDEA, Eclipse, Hibernate, h2, XPath, cobertura, AutoCAD, SVN, perforce}
 
-\resumeitem{Skills/Tools}{Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Ahchaius), git, memcached, ElasticSearch, \LaTeX, FIX, Java, JMS, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, Intellij, Eclipse, Hibernate, h2, XPath, cobertura, AutoCAD, SVN, perforce, subersion}
+\resumeitem{Skills/Tools}{Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), Cassandra, git, memcached, ElasticSearch, \LaTeX, FIX, Java, JMS, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, Intellij, Eclipse, Hibernate, h2, XPath, cobertura, AutoCAD, SVN, perforce}
 
 \negaskip
 
-\resumeitem{Operating Systems}{UNIX, Linux, PowerMAX OS, HP/UX, OpenVMS, Windows, OS X}
+\resumeitem{Operating Systems}{Linux, OS X, Unix, Windows, PowerMAX OS, HP/UX, OpenVMS}
 
 %\negaskip
 
@@ -164,8 +164,14 @@ trampas.kirk@gmail.com\\
         \chomp
 
         \begin{compactList}
+            % User Visibility micro-service
+            \item Developed a micro-service based on Netflix's tech stack (Karyon, Ribbon, Hystrix, Eureka, Archaius) to serve business-critical user settings from either a Cassandra cluster, or a foreign micro-service using Ribbon.
             % ElasticSearch
-            \item Modified ElasticSearch's index configruation to improve search relevancy for searches for usern names.
+            \item Rebuilt an ElasticSearch index configuration to force its inherent TF-IDF system to index simpler data more effectively improved search relevancy from dramatically useless to highly relevant.
+            % NSL maintenance
+            \item Maintained and implemented numerous feature requests to a monolithic application built using Java, JBoss, Spring, JMockit to ensure continuity of business.
+            % memcached
+            \item Built a program to analyze real world user data to create a memcached cache sized to minimize costs for caching selected data for all users and added that caching ability along with a feature toggle to the monolithic application.
         \end{compactList}
 
         } \\
@@ -176,7 +182,7 @@ trampas.kirk@gmail.com\\
 
         \begin{compactList}
             % OCEAN item
-            \item Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements.
+            % \item Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements.
             % CX TMSLink ACT Reporting recon:
             \item Designed and delivered a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation in two days.
             % LiquiFiCore
@@ -344,11 +350,11 @@ trampas.kirk@gmail.com\\
     \resumeitem{Currently}{
         \chomp
         \begin{compactList}
-            \item Tinkering with my resum\'{e} in \LaTeX.
+            % \item Tinkering with my resum\'{e} in \LaTeX.
             %\item Problem solving.
             \item Contributed a patch containing heap size enhancements to the coberuta maven plugin project.
             % \item I am currently working on a project to add Star Trek-like control of my bedroom light with COTS equipment.
-            \item Hobbies include, but are not limited to: aquatic HIIT, miniature helicopters, reading, video games, cycling, and running
+            \item Hobbies include, but are not limited to: aquatic martial arts, philosophy, reading, video games, and running
             %\item I have created a Java program for adding colorful formatting to forum posts. Players of EVE Online may have seen it in action.
             %\item I enjoy *nix hacking greatly. The fun in quickly building something fast, powerful, and that does the job itself, all from a collection of simple tools is professionally satisfying.
             % \item *nix hacking. I have been tweaking the same bash profile for years. An apt metaphor is a wizard's staff. Without it, I am diminished in effectiveness within a shell. But, I can summon my staff to any \texttt{/home} in the world with nothing but an Internet connection and \texttt{svn}. Although, I will upgrade to \texttt{git} as soon as I can find someone to pay me to learn it.
