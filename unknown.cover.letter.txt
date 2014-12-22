@@ -1,0 +1,25 @@
+To be perfectly frank, this position looks tailored for me.
+
+You need someone who can lead with their design skills and really strive toward not just an adequate solution, but an elegant and excellent one. I literally suffer professionally when I am not permitted to make the solution to a problem as good as I want it to be rather than merely meeting the business requirements. I bring with me quality and excellence requirements of my own.
+
+I thoroughly enjoy being a role model for less experienced developers to follow. Over the years I have learned a great deal of subtle, yet crucial things to keep in mind both when designing and writing code. And sharing these things with teammates not only makes their work better, it makes their work easier for me to work on when I need to. Things that may seem unnecessary now will often be found to bear fruit later, when new features are requested. I like to think that my code alone can adequately demonstrate my design, development, and even communication skills. I firmly believe that source code is written for two audiences. One, the computer, which will enforce its requirements all on its own. And two, future maintainers - including myself - who will have to interpret what the code is doing so that they can modify it. Neglecting that second audience happens all too often, to everyone's detriment. I simply love teaching all the tricks of the trade to talented, eager developers who want to learn. I find that in and of itself very rewarding.
+
+In terms of experience, I have between 7 and 8 eights of experience as a Software Engineer. Yet I have been programming unprofessionally for far longer. My first programmable computer was a TI-85 when I was 15.
+
+Regarding communication, I believe that I am one of the better written and oral communicators that I know of. In fact, I am using this cover letter in a deliberate attempt to demonstrate that ability to you. I hope that you will agree with my self-assessment.
+
+To say that I have operated mission critical systems would be an understatement. Multiple projects I have built, and actively maintain operate in a datacenter co-located with NASDAQ every single business day, and have for over almost three years. Literally billions of dollars worth of financial transactions flow through them every single day that the market is open. That is just how it is for everyone working in the high-frequency-trading finance industry. To be perfectly honest, processing payments for Expedia would be considerably less stressful for me, if no less important. And that is due entirely to my current level of mission critical operating capacity. Literally billions of dollars are at stake every single day. And I manage to sleep at night just fine.
+
+Everyone's definition of an agile methodology varies, but it has been the modus operandi for every team I have worked on in the past seven years. You will notice if you read my resume that I have not only demonstrated a deep knowledge of unit testing tools, techniques, continuous integration systems, and source code refactoring, but that I am a strong evangelist of these tools and techniques, and historically, have been the strongest evangelist for these things in the entire 500+ employee company. Quality matters greatly, and a little time invested now will almost always pay off more later.
+
+My scripting language experience is pretty well known among my peers, and the second-most recent project I have worked on in my current position was built almost entirely using scripting tools. I was given the requirements one afternoon around 2pm and delivered three small scripts that cohesively worked together to meet the not-insignificant requirements by 5:30 that day. Not only do I have a lot of experience doing it, but I really enjoy it.
+
+I do have a Bachelor's Degree in Computer Science.
+
+I literally meet or exceed every single one of your Qualifications for this position and more. And I strongly want to move to Seattle for a number of reasons. So this is not the only position in the area I am applying for. That means, if you have other positions available I would fit I would definitely consider those as well, but this one I think would fit me like a glove.
+
+I think that I would fit well in the position as described and am eager to hear back from you regarding employment possibilities.
+
+P.S. I really wish I could upload my resume in PDF form. I maintain it in LaTeX, and the output is beautiful, thanks to LaTeX, but only in PDF form.
+
+-Trampas
