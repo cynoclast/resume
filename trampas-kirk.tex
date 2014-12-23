@@ -110,7 +110,7 @@ trampas.kirk@gmail.com\\
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chomp
+% \chomp
 
 \begin{resumeblock}{Technical Skills}
 
@@ -161,7 +161,7 @@ trampas.kirk@gmail.com\\
 
     \resumeitem{\chimp\ Senior Application Engineer \\ Mainz Brady Group (at Nike WHC) \\  Nov 2013-Dec 2014}{
 
-        \chomp
+        \chomp % this makes the items line up with the title
 
         \begin{compactList}
             % User Visibility micro-service
@@ -178,11 +178,11 @@ trampas.kirk@gmail.com\\
 
     \resumeitem{\chimp\ Senior Programmer/Analyst \\ Citigroup, Global Derivatives Market \\  Dec 2009-Apr 2013}{
 
-        \chomp
+        \chomp % this makes the items line up with the title
 
         \begin{compactList}
             % OCEAN item
-            % \item Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements.
+            \item Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements.
             % CX TMSLink ACT Reporting recon:
             \item Designed and delivered a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation in two days.
             % LiquiFiCore
@@ -191,7 +191,7 @@ trampas.kirk@gmail.com\\
             %item Repeated the above success in parallel with an enhancement framework that consumes the data feed emitted by the validation framework.
             %\item The preceding two items were the first and second phases in the processing of all new orders within a concurrent dark pool crossing and routing engine distributed across high-availability nodes co-located with NASDAQ's servers that, in aggregate, handle several billion per day in order and crossing flow within $0.1s$ ($p = .90$) end-to-end.
             \item Introduced mock-object testing to a legacy project, complete with concrete, highly domain-relevant examples that allow other developers to easily follow suit with creating their own mock-based tests.
-            %\item Modified the above project to build using maven within the continuous integration server, Jenkins, complete with automated static code analysis tool implementation and unit test coverage measurement that provides fast build failure notification and QA.
+            \item Modified the above project to build using maven within the continuous integration server, Jenkins, complete with automated static code analysis tool implementation and unit test coverage measurement that provides fast build failure notification and QA.
             % Goal: allow engineering to debug in production
             % Accomplishments: Created a production development environment
         \end{compactList}
@@ -200,19 +200,19 @@ trampas.kirk@gmail.com\\
 
     \resumeitem{\chimp\ Senior Software Engineer\\ BenefitFocus.com \\ Oct 2005-Dec 2009}{
 
-        \chomp
+        \chomp % this makes the items line up with the title
 
         \begin{compactList}
 
             % Importing + EDI
-            %\item Worked with business stakeholders to design and implement complex data translation software incorporating Java, Oracle, Python, XML, and XSLT to process millions of benefits records on a daily basis.
+            \item Worked with business stakeholders to design and implement complex data translation software incorporating Java, Oracle, Python, XML, and XSLT to process millions of benefits records on a daily basis.
             % Config management/EDI
-            %\item Coordinated efforts between engineers and configuration management leading to a streamlined build and deployment process for mission critical business components.
+            \item Coordinated efforts between engineers and configuration management leading to a streamlined build and deployment process for mission critical business components.
             % Culture Focus Group
             \item Spearheaded a company-wide plan for improving code quality, requirements, the estimation process, and automated build processes, leading to more rapid development on more readable, maintainable, reliable code.
             % eExchange Standard Reporting
-            %\item Designed and implemented a JExcelApi-based reporting framework for use in an existing enterprise data exchange system serving thousands of clients, significantly improving report readability over the previous plain text format.
-            %\item Improved build processes, structures, and optimized controlled source size, which lead to more rapid development.
+            % \item Designed and implemented a JExcelApi-based reporting framework for use in an existing enterprise data exchange system serving thousands of clients, significantly improving report readability over the previous plain text format.
+            % \item Improved build processes, structures, and optimized controlled source size, which lead to more rapid development.
             % Importing
             \item Introduced unit tests and EasyMock testing to a legacy codebase, providing a guide complete with relevant, concrete examples that improve code quality and unit test coverage while allowing new developers to easily follow suit.
             % EDI, Importing, gMax, iMax, eExchange
@@ -230,16 +230,24 @@ trampas.kirk@gmail.com\\
         \end{compactList}
         } \\
 
+\end{resumeblock}
+
+\vspace{5cm}
+
+
+\begin{resumeblock}{Professional Experience Continued}
+
     \resumeitem{\chimp\ Software Engineer \\ MSIS Inc. \\ Fall 2004-Fall 2005}{
-        \chomp
+
+        \chomp % this makes the items line up with the title
 
         \begin{compactList}
 
             % Designed, implemented and maintained two multi-system software projects from back end data extraction via memory dump reads and shell scripts to storing, processing, and retrieving this information using extremely complex queries to calculate maximum simultaneous users counts for all software in use within one Department of Defense site.
-            %\item Improved the GUI for the simultaneous user tracking program to provide a faster and more helpful interface to the user.
+            \item Improved the GUI for the simultaneous user tracking program to provide a faster and more helpful interface to the user.
             \item Customized University of Michigan's radmind project for use by the DoD, including bug fixes and performance enhancements leading to 100\% improvement in system restore speed.
             \item Designed and implemented a simultaneous usage tracking algorithm across Unix and OpenVMS systems allowing the client to reduce the number of licenses to actual simultaneous users.
-            % \item Optimized legacy usage gathering scripts, leading to a 90\% reduction in the amount of time required to run.
+            \item Optimized legacy usage gathering scripts, leading to a 90\% reduction in the amount of time required to run.
             % \chomp
             % \chomp
 
@@ -248,16 +256,18 @@ trampas.kirk@gmail.com\\
 
     } \\
 
-    % \resumeitem{\chimp\ Structural Detailer \\ King Brothers Fabricating Inc. \\ Summer 1999-Fall 2000}{
-    %     \chomp
+    \resumeitem{\chimp\ Structural Detailer \\ King Brothers Fabricating Inc. \\ Summer 1999-Fall 2000}{
 
-    %     \begin{compactList}
-    %         \item Created detailed structural shop drawings of structural steel and aluminum components for industrial and residential clients so they could be fabricated in-shop and erected on-site.
-    %     \end{compactList}
+        \chomp % this makes the items line up with the title
 
-    % } \\
+        \begin{compactList}
+            \item Created detailed structural shop drawings of structural steel and aluminum components for industrial and residential clients so they could be fabricated in-shop and erected on-site.
+        \end{compactList}
 
-    \shortskip
+    } \\
+
+    \largeskip
+    %  \shortskip
 
 \end{resumeblock}
 
@@ -283,7 +293,7 @@ trampas.kirk@gmail.com\\
         \resumeitem{Summer 2000 - Spring 2004}{Bachelor of Science, Computer Science at West Virginia Wesleyan College \\
      & GPA: 3.48/4.0 (Overall), 3.7 (CS Major)} \\
 
-     \chomp
+     % \chomp
 
         \largeskip
     \end{resumeblock}
