@@ -22,6 +22,8 @@
 # Logs and databases #
 ######################
 *.log
+*.aux
+*.out
 
 # OS generated files #
 ######################
