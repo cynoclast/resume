@@ -1,8 +1,0 @@
-I play EVE. My first character was created in October, 2005, and he is still my main. I've taken breaks, but he is pushing 80M SP.
-
-I keep my resume in publicly accessible, user-authenticated version control. Specifically SVN. More because I have not yet taken the time to learn git, than I prefer it over git. It is written in LaTeX. I'll let you see the source if you're curious.
-
-I keep my EFT fittings in version control too.  And start it with a bastch file that first calls svn up, then after EFT is closed, calls svn ci -m "setups". It is a crude, but highly effective means of making sure I can always EFT warrior, no matter where I am, with all of my setups.
-
-And lastly, but certainly not leastly there is something I have to tell you that part of me would rather not. It is nothing serious, but I may have ruffled some feathers due to being blunt, honest, and the veracity of the Greater Internet F****wad Theory - and it is with not an insigificant amount of trepidation that I confess this - something else that I feel that - because all professional relationships should be entered into with honestity and integrity, I must tell you that I am the player behind Xaen. *ducks*
-
