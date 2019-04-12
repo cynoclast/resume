@@ -101,13 +101,13 @@
   \resumeSubHeadingListStart
   \small
     \item{
-     \textbf{Languages/protocols}{: Java, bash, regular expressions, \LaTeX, JMS, FIX, XML/XSLT, C/C++, PL/SQL}
+     \textbf{Languages/protocols}{: Java, bash, regular expressions, \LaTeX, JMS, FIX, PL/SQL}
      \hfill
-     \textbf{Tools}{: AWS, Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), gradle, Couchbase, git, memcached, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, Intellij, SVN, perforce, Hibernate, AutoCAD, SVN, perforce}
+     \textbf{Tools}{: AWS, Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), gradle, Couchbase, git, UNIX/POSIX tools, memcached, maven, PowerMokito, Spring, Jenkins, Design Patterns{\tiny{\texttrademark}}, Intellij, SVN, perforce, Hibernate, SVN, perforce}
     }
     \vspace{-5pt}
     \item{
-     \textbf{Operating Systems}{: Linux, OS X, Unix, Windows, PowerMAX OS, HP/UX, OpenVMS}
+     \textbf{Operating Systems}{: Linux, OS X, Unix, Windows}
     }
 \resumeSubHeadingListEnd
 
@@ -122,8 +122,8 @@
         \resumeItem{Notifications Team}
           {Enhanced and supported a suite of Karyon based microservices that send the majority of email/sms/push notifications to users
             \begin{itemize}
-                \item Added BCP 47 (international language standard) support to microservices to support sending order and marketing notifications in 33 languages in many countries
-                \item Introduced design improvement strategies to a team working on a large, complex suite of services, resulting in easier to maintain code
+                \item Added BCP 47 (international language standard) support to microservices to support sending order and marketing notifications in 33 languages in many 28
+                \item Reintroduced the rich domain model to a team working on a large, complex suite of services, resulting in more cohesive, easier to maintain code
                 \item Introduced and enforced new integration testing standards that reduced future development and testing time
             \end{itemize}
             }
@@ -131,16 +131,16 @@
           {Nike Product Information in AWS
             \begin{itemize}
                 \item Helped grow Nike's direct-to-consumer market by developing a suite of microservices in AWS based on Netflix's tech stack to reliably serve product data exceeding a million hits per minute across all services within a devops environment
-                \item Enhanced and supported a non-cloud facade service that aggregates older, less user-friendly services to served many diverse clients in a fast and consistent way
+                \item Enhanced and supported a non-cloud facade service that aggregates older, less user-friendly services to serve server-to-server, desktop, appliance, and mobile clients in a fast and consistent way
             \end{itemize}
           }
         \resumeItem{Social Team}
-          {Enhanced and supported a monolith spring application and ported functionality to AWS microservices
+          {Enhanced and supported a monolithic spring application and ported functionality to AWS microservices
           \begin{itemize}
               \item Developed a micro-service based on Netflix's tech stack (Karyon, Ribbon, Hystrix, Eureka, Archaius) to serve business-critical user settings from either a Cassandra cluster, or a foreign micro-service using Ribbon
-              \item Rebuilt an ElasticSearch index configuration to force its inherent TF-IDF system to index simpler data more effectively improved search relevancy from dramatically useless to highly relevant
-              \item Enhanced and supported and implemented numerous feature requests to a monolithic application built using Java, JBoss, Spring, JMockit to ensure continuity of business
-              \item Built a program to analyze real world user data to create a memcached cache sized to minimize costs for caching selected data for all users and added that caching ability along with a feature toggle to the monolithic application
+%              \item Rebuilt an ElasticSearch index configuration to force its inherent TF-IDF system to index sparse data more effectively improved search relevancy from dramatically useless to highly relevant
+              \item Enhanced and supported and implemented numerous feature requests to a monolithic application built on Java, JBoss, Spring, JMockit to ensure continuity of business
+              \item Built a program in a spike to analyze real world user data to create a memcached cache sized to minimize costs for caching selected data for all users and added that caching ability along with a feature toggle to the monolithic application
           \end{itemize}
           }
       \resumeItemListEnd
@@ -150,36 +150,48 @@
       {Senior Programmer/Analyst}{Dec 2009 - Apr 2013}
         \resumeItemListStart
           \resumeItem{OCEAN}
-            {Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements.}
+            {Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements for North American markets}
         \resumeItemListEnd
 
         \resumeItemListStart
           \resumeItem{CX TMSLink ACT Reporting recon}
-            {Designed and delivered a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation in two days.}
+            {Designed and delivered in two days a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation}
         \resumeItemListEnd
 
         \resumeItemListStart
           \resumeItem{LiquiFiCore}
             {Enhanced and supported a Dark-pool Crossing Engine
                 \begin{itemize}
-                    \item Demonstrated understanding of an unstated need and created an inbound-message validation framework that handles the job so cleanly that no feature has been requested of it since its inception. All existing validation was moved to it upon its release despite being unrequested
+                    \item Demonstrated understanding of an unstated need and created an inbound-message validation framework that that all existing validation was moved to it upon its release, and it was immediately adopted by another team within the organization
+                    \item Wrote a test harness using custom Matchers for the clearing data output stream that made testing, debugging, and all development on that stream easy; to quote my manager at the time, "Your RIO testing work rocks the hizouse"
+                    \item Wrote the clock that replaced all calls to retrieve system time with a custom clock that allowed the developer to convince the whole system into thinking it was any arbitrary time so that time-based events and rules like market open, market close, and others to be simulated at any time, with a safeguard against it being used outside of local development and test environments
                     \item Introduced mock-object testing to a legacy project, complete with concrete, highly domain-relevant examples that allow other developers to easily follow suit with creating their own mock-based tests
                     \item Modified the above project to build using maven within the continuous integration server, Jenkins, complete with automated static code analysis tool implementation and unit test coverage measurement that provides fast build failure notification and QA
-                \end{itemize}
-        }
+                \end{itemize}}
             \resumeItemListEnd
 
     \resumeSubheading
       {BenefitFocus.com}{Charleston, SC}
-      {Senior Software Engineer}{Oct 2005 - Dec 2009}
+      {Team Lead}{Oct 2005 - Dec 2009}
       \resumeItemListStart
-        \resumeItem{Electronic Data Intechange}
+        \resumeItem{Electronic Data Interchange (EDI)}
+            {Managed a team of six developers
+            \begin{itemize}
+            \item Provided feedback on performance, and mentoring to less experienced developers
+            \item Acted as the point of contact for the team and attended organizational/planning meetings to reduce interruptions to development
+            \item Assigned tasks based on developer strengths, weaknesses, and maintaining effective cross-training with input from the team
+            \item Addressed grievances I was empowered to handle and escalated those I was not
+            \item Performed estimation for the project and tasks within it
+            \item Organized one-on-one meetings with each member to discuss performance and allow them to discuss confidential information or provide feedback
+\end{itemize}}
+
+        \resumeItem{Senior Software Engineer (EDI)}
           {Enhanced and supported the project responsible for all meaningful Output (I/O) from the company
             \begin{itemize}
-                \item Worked with business stakeholders to design and implement complex data translation software incorporating Java, Oracle, Python, XML, and XSLT to process millions of benefits records on a daily basis
-                \item Coordinated efforts between engineers and configuration management leading to a streamlined build and deployment process for mission critical business components
-                \item Spearheaded a company-wide plan for improving code quality, requirements, the estimation process, and automated build processes, leading to more rapid development on more readable, maintainable, reliable code
-                \item  Introduced unit tests and EasyMock testing to a legacy codebase, providing a guide complete with relevant, concrete examples that improve code quality and unit test coverage while allowing new developers to easily follow suit
+            \item Spearheaded a company-wide plan for improving code quality, requirements, the estimation process, and automated build processes, leading to more rapid development on more readable, maintainable, reliable code
+            \item Introduced unit tests and EasyMock testing to a legacy codebase, providing a guide complete with relevant, concrete examples that improve code quality and unit test coverage while allowing new developers to easily follow suit
+            \item Coordinated efforts between engineers and configuration management leading to a streamlined build and deployment process for mission critical business components
+            \item Worked with business stakeholders to design and implement complex data translation software incorporating Java, Oracle, Python, XML, and XSLT to process millions of benefits records on a daily basis
             \end{itemize}}
       \resumeItemListEnd
 
@@ -187,7 +199,7 @@
   {MSIS Inc.}{Dahlgren, VA}
   {Software Engineer}{Fall 2004 - Fall 2005}
   \resumeItemListStart
-    \resumeItem{Multi-OS work for the Navy}
+    \resumeItem{Supported the Aegis Weapon System for the Navy}
       {Worked on various projects some of which were classified secret
         \begin{itemize}
             \item Designed, implemented and maintained two multi-system software projects from back end data extraction via memory dump reads and shell scripts to storing, processing, and retrieving this information using extremely complex queries to calculate maximum simultaneous users counts for all software in use within one Department of Defense site
@@ -197,13 +209,13 @@
         \end{itemize}}
   \resumeItemListEnd
 
-\resumeSubheading
-  {King Brothers Fabricating Inc.}{Parkersburg, WV}
-  {Structural Detailer}{Summer 1999 - Fall 2000}
-  \resumeItemListStart
-    \resumeItem{Computer Aided Drafting (CAD)}
-      {Created detailed structural shop drawings of structural steel and aluminum components for industrial and residential clients so they could be fabricated in-shop and erected on-site}
-  \resumeItemListEnd
+%\resumeSubheading
+%  {King Brothers Fabricating Inc.}{Parkersburg, WV}
+%  {Structural Detailer}{Summer 1999 - Fall 2000}
+%  \resumeItemListStart
+%    \resumeItem{Computer Aided Drafting (CAD)}
+%      {Created detailed structural shop drawings of structural steel and aluminum components for industrial and residential clients so they could be fabricated in-shop and erected on-site}
+%  \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -212,7 +224,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {West Virginia Wesleyan College}{Buckhannon, WV}
-      {Bachelor of Science, Computer Science;  GPA: 3.48/4.0 (Overall), 3.7 (CS Major)}{Summer 2000 - Spring 2004}{
+      {Bachelor of Science, Computer Science}{Summer 2000 - Spring 2004}{
     }
   \resumeSubHeadingListEnd
 %-----------/EDUCATION-----------------
