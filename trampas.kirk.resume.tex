@@ -105,10 +105,11 @@
   \resumeSubHeadingListStart
   \small
     \item{
-     \textbf{Languages/protocols}{: Java 8, bash, regular expressions, \LaTeX, JMS, FIX, PL/SQL}
-     \hfill
-     \textbf{Tools}{: AWS (EC2, Dynamo, S3), Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), gradle, Couchbase, git, UNIX/POSIX tools, memcached, maven, PowerMock/PowerMockito, Spring, Jenkins/CI/CD, Design Patterns{\tiny{\texttrademark}}, Intellij, SVN, perforce, Hibernate, SVN, perforce}
+     \textbf{Languages/protocols}{: scala, javascript, typescript, Java 8, bash, regular expressions, \LaTeX, JMS, FIX, PL/SQL}
+%     \hfill
     }
+    \vspace{-5pt}
+    \item{\textbf{Tools}{: AWS (EC2, Dynamo, S3, Kinesis), memsql, postgres, scylla, skinny ORM, karma, Apache Avro, Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), gradle, Couchbase, git, UNIX/POSIX tools, memcached, maven, PowerMock/PowerMockito, Spring, Jenkins/CI/CD, Design Patterns{\tiny{\texttrademark}}, Intellij, Hibernate, SVN, perforce}}
     \vspace{-5pt}
     \item{
      \textbf{Operating Systems}{: Linux, OS X, Unix, Windows}
@@ -120,10 +121,29 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Storygize, Inc.}{remote}
+      {Senior Software Engineer}{Jun 2021 - current}
+      \resumeItemListStart
+        \resumeItem{Engineering (scala, javascript)}
+          {Enhanced and supported a Real Time Bidding (RTB) Demand Side (Advertising) Platform (DSP) reaching hundreds of millions of users a day
+            \begin{itemize}
+                \item Created Insertion Order form generation with DocuSign integration allowing faster onboarding of new clients
+                \item Enhanced content lifecycle management to handle failures at supply partners resulting in less noise
+                \item Added event type audience supporting any user interaction, for example click, conversion, visit to target those users
+                \item Created a monthly supplier usage report job that compiles and emails the report, replacing a manual process
+                \item Implemented a metered inventory caching to greatly speed up inventory targeting estimates while building executions
+                \item Built a JWT authenticated Zendesk Integration for help pages
+                \item Added reporting capability by zip code, DMAs, demographics (advertising) performance data from data aggregation via spark RDD, to report generation
+                \item Fixed numerous 'flaky' tests with configurable smart timeouts, resulting in far fewer failed builds
+            \end{itemize}
+            }
+    \resumeItemListEnd
+
+    \resumeSubheading
       {Mainz Brady Group / Nike. Inc}{Beaverton, OR}
       {Senior Application Engineer}{Nov 2013 - May 2019 (3 contracts, 1 Fulltime)}
       \resumeItemListStart
-        \resumeItem{Notifications Team}
+        \resumeItem{Notifications Team (Java, microservices)}
           {Enhanced and supported a suite of Karyon based microservices that send the majority of email/sms/push notifications to users
             \begin{itemize}
                 \item Instigated a push for shorter more efficient standup meetings resulting in less time wasted and improved developer happiness
@@ -135,14 +155,14 @@
                 \item Introduced and enforced new integration testing standards that reduced future development and testing time and laughter among the team
             \end{itemize}
             }
-        \resumeItem{Product Services}
+        \resumeItem{Product Services (Java, microservices)}
           {Nike Product Information in AWS
             \begin{itemize}
                 \item Helped grow Nike's direct-to-consumer market by developing a suite of microservices in AWS based on Netflix's tech stack to reliably serve product data exceeding a million hits per minute across all services within a devops environment
                 \item Enhanced and supported a non-cloud facade service that aggregates older, less user-friendly services to serve server-to-server, desktop, appliance, and mobile clients in a fast and consistent way
             \end{itemize}
           }
-        \resumeItem{Social Team}
+        \resumeItem{Social Team (Java, spring)}
           {Enhanced and supported a monolithic spring application and ported functionality to AWS microservices
           \begin{itemize}
               \item Developed a micro-service based on Netflix's tech stack (Karyon, Ribbon, Hystrix, Eureka, Archaius) to serve business-critical user settings from either a Cassandra cluster, or a foreign micro-service using Ribbon
