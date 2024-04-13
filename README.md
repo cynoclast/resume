@@ -4,8 +4,23 @@
 
 ## To view the primary input (source), open [trampas.kirk.resume.tex](https://github.com/cynoclast/resume/blob/master/trampas.kirk.resume.tex)
 
-Install pdflatex:
-  `brew install pdflatex`
+## OSX
 
-Build & Open:
-  `pdflatex trampas.kirk.resume.tex && Open Trampas.Kirk.resume.pdf`
+### Install pandoc
+
+```brew install basictex```
+
+### Build & Open (beta)
+
+```pandoc trampas.kirk.resume.tex -o Trampas.Kirk.resume.pdf && Open Trampas.Kirk.resume.pdf```
+
+## Windows 
+### Install pdflatex: 
+
+```brew install pdflatex```
+
+### Build & Open
+
+```pdflatex trampas.kirk.resume.tex && Open Trampas.Kirk.resume.pdf```
+
+

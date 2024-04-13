@@ -121,6 +121,29 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+        {SquareTrade Inc.}{remote}
+        {Lead Engineer}{Jun 2021 - current}
+        \resumeItemListStart
+        \resumeItem{Engineering (Java, groovy, kafka)}
+            {Designed and delivered the Premium Benefits project which is automation of claims against previously sold plans that were handled in a costly high-touch process by agents, fixed the incorrect handling of Limit of Liability (LOL), enabled 100\% self-service for the customer so they no longer have to call in, enabled gift card payouts from partner merchants, made payouts automated, routed customers to local cleaners and repair companies by zipcode where possible, improved analytics and cost tracking by including the new claim type in the existing processes rather than exclusively within Salesforce. This project entailed:
+            \begin{itemize}
+                \item Consulting with architects, lead engineers, the data warehouse team, database team, accounting, and the business to discover impact and interested parties
+                \item Extensive research into the deprecated monolith \& minilith to prevent errors and adverse impact to old business logic
+                \item Acquiring architecture approval of the project plan that modified 7(?) existing µservices and prevented business impact to the deprecated monolith
+                \item Designing and building the company's person-domain µservice which is now the "Gold Standard for testing µservices" within the company
+                \item Designing and building the premium-benefit service which handled all business logic \& coordination for the project
+                \item Creation of the first POST endpoint that allowed direct creation of claims in the database in the company's history
+                \item Creating Dynatrace dashboards and splunk alerts for the new services
+                \item Taking ownership of a µservice that my team became the primary maintainers of plus alerting and a dashboard
+                \item Ensuring that the existing deprecated systems were not adversely impacted by the new data being created in the database still in use
+                \item Improved analytics by storing claims of the new type alongside the existing ones without breaking core business logic or impacting LOL
+                \item Monitoring alerts, improving alerting logic to eliminate false positives yet not miss unforeseen errors due to entirely new circumstances
+            \end{itemize}
+            }
+        \resumeItemListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
       {Storygize, Inc.}{remote}
       {Senior Software Engineer}{Jun 2021 - current}
       \resumeItemListStart
