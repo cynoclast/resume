@@ -6,21 +6,29 @@
 
 ## OSX
 
-### Install pandoc
+### Install mactex (```basictex``` won't work because we use fancy styles not in the basic version.)
 
-```brew install basictex```
+```
+brew install mactex
+```
 
-### Build & Open (beta)
+### Build & Open
 
-```pandoc trampas.kirk.resume.tex -o Trampas.Kirk.resume.pdf && Open Trampas.Kirk.resume.pdf```
+```
+pdflatex trampas.kirk.resume.tex && Open Trampas.Kirk.resume.pdf
+```
 
 ## Windows 
 ### Install pdflatex: 
 
-```brew install pdflatex```
+```
+brew install pdflatex
+```
 
 ### Build & Open
 
-```pdflatex trampas.kirk.resume.tex && Open Trampas.Kirk.resume.pdf```
+```
+pdflatex trampas.kirk.resume.tex && Open Trampas.Kirk.resume.pdf
+```
 
 
