@@ -16,12 +16,8 @@
 \usepackage{enumitem}
 \usepackage[pdftex, hidelinks]{hyperref}
 \usepackage{fancyhdr}
-%\usepackage{graphicx}
-%\graphicspath{ {./} }
-
 
 \usepackage[charter]{mathdesign} % Bitstream Charter
-% \usepackage{newpxtext,newpxmath} % Palatino
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -84,7 +80,6 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
@@ -96,8 +91,6 @@
   Github: \href{https://github.com/cynoclast}{\color{blue}\underline{https://github.com/cynoclast}} \\
   % Amz Author page: \href{https://www.amazon.com/Trampas-Kirk/e/B07R24DKRK}{\color{blue}\underline{Trampas Kirk}} \\
     \vspace{1mm}
-%\includegraphics{logo}
-
 \end{center}
 
 %-----------SKILLS-----------------
@@ -114,7 +107,7 @@
     \item{
      \textbf{Operating Systems}{: Linux, OS X, Unix, Windows}
     }
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \shorterSection{Experience}
@@ -122,7 +115,7 @@
 
     \resumeSubheading
         {SquareTrade Inc.}{remote}
-        {Lead Engineer}{Sept 2022 - current}
+        {Lead Engineer}{Sept 2022 - Dec 2024}
         \resumeItemListStart
         \resumeItem{Engineering (Java, groovy, kafka)}
             {Designed and delivered the Premium Benefits project which is automation of claims against previously sold plans that were handled in a costly high-touch process by agents, fixed the incorrect handling of Limit of Liability (LOL), enabled 100\% self-service for the customer so they no longer have to call in, enabled gift card payouts from partner merchants, made payouts automated, routed customers to local cleaners and repair companies by zipcode where possible, improved analytics and cost tracking by including the new claim type in the existing processes rather than exclusively within Salesforce. This project entailed:
@@ -142,7 +135,6 @@
             }
         \resumeItemListEnd
 
-  \resumeSubHeadingListStart
     \resumeSubheading
       {Storygize, Inc.}{remote}
       {Senior Software Engineer}{Jun 2021 - Sept 2022}
@@ -160,7 +152,7 @@
                 \item Fixed numerous 'flaky' tests with configurable smart timeouts, resulting in far fewer failed builds
             \end{itemize}
             }
-    \resumeItemListEnd
+      \resumeItemListEnd
 
     \resumeSubheading
       {Mainz Brady Group / Nike. Inc}{Beaverton, OR}
@@ -189,7 +181,6 @@
           {Enhanced and supported a monolithic spring application and ported functionality to AWS microservices
           \begin{itemize}
               \item Developed a micro-service based on Netflix's tech stack (Karyon, Ribbon, Hystrix, Eureka, Archaius) to serve business-critical user settings from either a Cassandra cluster, or a foreign micro-service using Ribbon
-%              \item Rebuilt an ElasticSearch index configuration to force its inherent TF-IDF system to index sparse data more effectively improved search relevancy from dramatically useless to highly relevant
               \item Enhanced and supported and implemented numerous feature requests to a monolithic application built on Java, JBoss, Spring, JMockit to ensure continuity of business
               \item Built a program in a spike to analyze real world user data to create a memcached cache sized to minimize costs for caching selected data for all users and added that caching ability along with a feature toggle to the monolithic application
           \end{itemize}
@@ -199,34 +190,29 @@
     \resumeSubheading
       {Citigroup, Global Derivatives Market}{Charleston, SC}
       {Senior Programmer/Analyst}{Dec 2009 - Apr 2013}
-        \resumeItemListStart
-          \resumeItem{OCEAN}
-            {Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements for North American markets}
-        \resumeItemListEnd
-
-        \resumeItemListStart
-          \resumeItem{CX TMSLink ACT Reporting recon}
-            {Designed and delivered in two days a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation}
-        \resumeItemListEnd
-
-        \resumeItemListStart
-          \resumeItem{LiquiFiCore}
-            {Enhanced and supported a Dark-pool Crossing Engine
-                \begin{itemize}
-                    \item Demonstrated understanding of an unstated need and created an inbound-message validation framework that that all existing validation was moved to it upon its release, and it was immediately adopted by another team within the organization
-                    \item Wrote a test harness using custom Matchers for the clearing data output stream that made testing, debugging, and all development on that stream easy; to quote my manager at the time, "Your RIO testing work rocks the hizouse"
-                    \item Wrote the clock that replaced all calls to retrieve system time with a custom clock that allowed the developer to convince the whole system into thinking it was any arbitrary time so that time-based events and rules like market open, market close, and others to be simulated at any time, with a safeguard against it being used outside of local development and test environments
-                    \item Introduced mock-object testing to a legacy project, complete with concrete, highly domain-relevant examples that allow other developers to easily follow suit with creating their own mock-based tests
-                    \item Modified the above project to build using maven within the continuous integration server, Jenkins, complete with automated static code analysis tool implementation and unit test coverage measurement that provides fast build failure notification and QA
-                \end{itemize}}
-            \resumeItemListEnd
+      \resumeItemListStart
+        \resumeItem{OCEAN}
+          {Created a multi-threaded pseudo-producer-consumer product that provides realtime message reconciliation in conjunction with another department via hooks into the file system to achieve non-busy-wait monitoring, and dynamic, adaptive message resending capability, and provides an elegant solution to keep the firm in compliance with intraday FINRA reporting requirements for North American markets}
+        \resumeItem{CX TMSLink ACT Reporting recon}
+          {Designed and delivered in two days a scripting product based entirely on common UNIX utilities from requirements to production in one week that allowed automatic reconciliation of order execution data between disparate systems automatically, complete with emailed report generation}
+        \resumeItem{LiquiFiCore}
+          {Enhanced and supported a Dark-pool Crossing Engine
+            \begin{itemize}
+                \item Demonstrated understanding of an unstated need and created an inbound-message validation framework that that all existing validation was moved to it upon its release, and it was immediately adopted by another team within the organization
+                \item Wrote a test harness using custom Matchers for the clearing data output stream that made testing, debugging, and all development on that stream easy; to quote my manager at the time, "Your RIO testing work rocks the hizouse"
+                \item Wrote the clock that replaced all calls to retrieve system time with a custom clock that allowed the developer to convince the whole system into thinking it was any arbitrary time so that time-based events and rules like market open, market close, and others to be simulated at any time, with a safeguard against it being used outside of local development and test environments
+                \item Introduced mock-object testing to a legacy project, complete with concrete, highly domain-relevant examples that allow other developers to easily follow suit with creating their own mock-based tests
+                \item Modified the above project to build using maven within the continuous integration server, Jenkins, complete with automated static code analysis tool implementation and unit test coverage measurement that provides fast build failure notification and QA
+            \end{itemize}
+          }
+      \resumeItemListEnd
 
     \resumeSubheading
       {BenefitFocus.com}{Charleston, SC}
       {Team Lead}{Oct 2005 - Dec 2009}
       \resumeItemListStart
         \resumeItem{Electronic Data Interchange (EDI)}
-            {Managed a team of six developers
+          {Managed a team of six developers
             \begin{itemize}
             \item Provided feedback on performance, and mentoring to less experienced developers
             \item Acted as the point of contact for the team and attended organizational/planning meetings to reduce interruptions to development
@@ -234,8 +220,8 @@
             \item Addressed grievances I was empowered to handle and escalated those I was not
             \item Performed estimation for the project and tasks within it
             \item Organized one-on-one meetings with each member to discuss performance and allow them to discuss confidential information or provide feedback
-\end{itemize}}
-
+            \end{itemize}
+          }
         \resumeItem{Senior Software Engineer (EDI)}
           {Enhanced and supported the project responsible for all meaningful Output (I/O) from the company
             \begin{itemize}
@@ -243,43 +229,44 @@
             \item Introduced unit tests and EasyMock testing to a legacy codebase, providing a guide complete with relevant, concrete examples that improve code quality and unit test coverage while allowing new developers to easily follow suit
             \item Coordinated efforts between engineers and configuration management leading to a streamlined build and deployment process for mission critical business components
             \item Worked with business stakeholders to design and implement complex data translation software incorporating Java, Oracle, Python, XML, and XSLT to process millions of benefits records on a daily basis
-            \end{itemize}}
+            \end{itemize}
+          }
       \resumeItemListEnd
 
-\resumeSubheading
-  {MSIS Inc.}{Dahlgren, VA}
-  {Software Engineer}{Fall 2004 - Fall 2005}
-  \resumeItemListStart
-    \resumeItem{Supported the Aegis Weapon System for the Navy}
-      {Worked on various projects some of which were classified secret
-        \begin{itemize}
+    \resumeSubheading
+      {MSIS Inc.}{Dahlgren, VA}
+      {Software Engineer}{Fall 2004 - Fall 2005}
+      \resumeItemListStart
+        \resumeItem{Supported the Aegis Weapon System for the Navy}
+          {Worked on various projects some of which were classified secret
+            \begin{itemize}
             \item Designed, implemented and maintained two multi-system software projects from back end data extraction via memory dump reads and shell scripts to storing, processing, and retrieving this information using extremely complex queries to calculate maximum simultaneous users counts for all software in use within one Department of Defense site
             \item Improved the GUI for the simultaneous user tracking program to provide a faster and more helpful interface to the user
             \item Customized University of Michigan's radmind project for use by the DoD, including bug fixes and performance enhancements leading to 100\% improvement in system restore speed
             \item Designed and implemented a simultaneous usage tracking algorithm across Unix and OpenVMS systems allowing the client to reduce the number of licenses to actual simultaneous users
-        \end{itemize}}
-  \resumeItemListEnd
+            \end{itemize}
+          }
+      \resumeItemListEnd
 
-\resumeSubheading
-  {King Brothers Fabricating Inc.}{Parkersburg, WV}
-  {Structural Detailer}{Summer 1999 - Fall 2000}
-  \resumeItemListStart
-    \resumeItem{Computer Aided Drafting (CAD)}
-      {Created detailed structural shop drawings from architectual drawings in AutoCAD for in-house fabrication and erection}
-  \resumeItemListEnd
+    \resumeSubheading
+      {King Brothers Fabricating Inc.}{Parkersburg, WV}
+      {Structural Detailer}{Summer 1999 - Fall 2000}
+      \resumeItemListStart
+        \resumeItem{Computer Aided Drafting (CAD)}
+          {Created detailed structural shop drawings from architectural drawings in AutoCAD for in-house fabrication and erection}
+      \resumeItemListEnd
 
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd % Closing the Experience section
 
 %-----------EDUCATION-----------------
 \shorterSection{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {West Virginia Wesleyan College}{Buckhannon, WV}
-      {Bachelor of Science, Computer Science}{Summer 2000 - Spring 2004}{
-    }
+      {Bachelor of Science, Computer Science}{Summer 2000 - Spring 2004}
   \resumeSubHeadingListEnd
-%-----------/EDUCATION-----------------
 
+%-----------PROJECTS AND HOBBIES-----------------
 \shorterSection{Projects and Hobbies}
   \resumeSubHeadingListStart
   \small
@@ -301,5 +288,6 @@
     \vspace{-5pt}
     \item{Contributed a patch containing heap size enhancements to the coberuta maven plugin project}
   \resumeSubHeadingListEnd
+
 %-------------------------------------------
 \end{document}
