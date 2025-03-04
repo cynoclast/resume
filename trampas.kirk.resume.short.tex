@@ -1,0 +1,128 @@
+%-------------------------
+% Two-Page Resume in Latex (Adjusted for Skills/Tools, Exact Two Pages)
+% Author: Trampas Kirk
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article} % Reduced from 12.5pt to 12pt
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjusted margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.3in} % Reduced from 1.4in to 1.3in
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting with slightly reduced spacing
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-2pt}]
+\titlespacing{\section}{0pt}{12pt}{8pt} % Reduced from 14pt/10pt to 12pt/8pt
+
+% Custom commands with reduced spacing
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item[]
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{0pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=6pt,topsep=6pt]} % Reduced from 8pt to 6pt
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=6pt,topsep=6pt]} % Reduced from 8pt to 6pt
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \textbf{{\LARGE Trampas Kirk}} \\
+  \vspace{6mm} % Reduced from 8mm to 6mm
+  \href{mailto:trampas.kirk@gmail.com}{\color{blue}\underline{trampas.kirk@gmail.com}} $\vert$
+  LinkedIn: \href{https://www.linkedin.com/in/trampaskirk/}{\color{blue}\underline{trampaskirk}} $\vert$
+  Github: \href{https://github.com/cynoclast}{\color{blue}\underline{github.com/cynoclast}} \\
+  \vspace{6mm} % Reduced from 8mm to 6mm
+\end{center}
+
+%-----------SKILLS-----------------
+\section{Skills/Tools}
+\resumeSubHeadingListStart
+  \resumeItem{Languages}{Java 17, bash, regular expressions, \LaTeX, JMS, FIX, PL/SQL, scala}
+  \resumeItem{Tools}{Kafka, AWS (EC2, Dynamo, S3, Kinesis), memsql, postgres, scylla, skinny ORM, karma, Apache Avro, Netflix Tech Stack (Hystrix, Asgard, Ribbon, Eureka, Karyon, Archaius), gradle, Couchbase, git, UNIX/POSIX tools, memcached, maven, PowerMock/PowerMockito, Spring, Jenkins/CI/CD, Design Patterns{\tiny{\texttrademark}}, Intellij, Hibernate, SVN, perforce}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading{SquareTrade Inc.}{remote}{Lead Engineer}{Sept 2022 - Dec 2024}
+  \resumeItemListStart
+    \resumeItem{Premium Benefits}{Designed and delivered the Premium Benefits project which revolutionized claims handling by eliminating the need for costly high-touch agent processes, enabling 100\% customer self-service that drastically improved user satisfaction and reduced operational costs, while also automating gift card payouts from partner merchants and routing customers to local repair services by zip code, significantly enhancing customer convenience and company efficiency.}
+    \resumeItem{Analytics}{Enhanced analytics and cost tracking by integrating new claim types into existing processes without disrupting deprecated systems, ensuring accurate Limit of Liability handling that preserved financial integrity, and setting a precedent for data consistency that improved decision-making across accounting and business teams.}
+    \resumeItem{Microservices}{Built the company’s person-domain µservice, now recognized as the "Gold Standard" for testing microservices, establishing a benchmark that improved the quality and reliability of all subsequent service development company-wide and streamlined testing processes for engineering teams.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Storygize, Inc.}{remote}{Senior Software Engineer}{Jun 2021 - Sept 2022}
+  \resumeItemListStart
+    \resumeItem{Onboarding}{Created Insertion Order form generation with DocuSign integration, accelerating client onboarding by weeks which allowed the company to scale its customer base rapidly, significantly increasing revenue potential and improving client satisfaction with a seamless signup experience.}
+    \resumeItem{Targeting}{Implemented metered inventory caching that greatly sped up inventory targeting estimates, enhancing ad delivery efficiency and enabling advertisers to reach their audiences faster and more accurately, which boosted campaign performance and client retention rates.}
+    \resumeItem{Reporting}{Added zip code, DMAs, and demographic reporting via spark RDD, providing advertisers with granular insights into campaign performance that improved targeting precision across diverse markets, ultimately driving higher ROI and strengthening Storygize’s competitive edge in the ad tech space.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Mainz Brady Group / Nike, Inc.}{Beaverton, OR}{Senior Application Engineer}{Nov 2013 - May 2019}
+  \resumeItemListStart
+    \resumeItem{Notifications}{Supported Karyon-based microservices for notifications, adding BCP 47 support to enable messaging in 33 languages across 28 countries, which expanded Nike’s global customer engagement and increased market penetration by ensuring culturally relevant communication with millions of users worldwide.}
+    \resumeItem{Domain Model}{Reintroduced the rich domain model to a complex suite of services, resulting in more cohesive and maintainable code that reduced testing cycles and developer onboarding time, significantly enhancing team productivity and long-term system reliability at Nike.}
+    \resumeItem{Product Data}{Developed AWS-based microservices using Netflix’s tech stack to serve product data at over a million hits per minute, growing Nike’s direct-to-consumer market by providing fast, reliable access that boosted online sales and improved user experience across all platforms.}
+    \resumeItem{Testing}{Introduced new integration testing standards that reduced future development and testing time, fostering a more agile development process that saved countless hours and increased team morale through smoother workflows and fewer production issues.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Citigroup, Global Derivatives Market}{Charleston, SC}{Senior Programmer/Analyst}{Dec 2009 - Apr 2013}
+  \resumeItemListStart
+    \resumeItem{Validation}{Created an inbound-message validation framework for a Dark-pool Crossing Engine, increasing system reliability by catching errors early, which reduced costly trading discrepancies and was adopted by multiple teams, enhancing overall operational stability across the firm.}
+    \resumeItem{Testing}{Introduced mock-object testing to a legacy project with concrete examples, enabling faster development cycles by cutting debugging time and improving code quality, which set a new standard for testing practices that other developers could easily adopt, boosting team efficiency.}
+    \resumeItem{Reconciliation}{Built OCEAN, a multi-threaded reconciliation tool that ensured FINRA compliance by providing real-time message reconciliation, preventing regulatory penalties and maintaining market trust through reliable intraday reporting for North American markets.}
+  \resumeItemListEnd
+
+  \resumeSubheading{BenefitFocus.com}{Charleston, SC}{Team Lead / Senior Software Engineer}{Oct 2005 - Dec 2009}
+  \resumeItemListStart
+    \resumeItem{Code Quality}{Spearheaded a company-wide plan to improve code quality and automated build processes, speeding up development cycles and enhancing software reliability, which allowed BenefitFocus to deliver updates faster and maintain a competitive edge in benefits administration.}
+    \resumeItem{Data Processing}{Designed data translation software processing millions of benefits records daily using Java, Oracle, and XSLT, boosting operational efficiency by ensuring timely and accurate benefits administration, which improved client satisfaction and retention significantly.}
+    \resumeItem{Team Leadership}{Led a team of six developers by mentoring and assigning tasks based on strengths, improving team productivity and morale while reducing interruptions, which enabled faster project delivery and fostered a collaborative, high-performing engineering culture.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{West Virginia Wesleyan College}{Buckhannon, WV}{B.S., Computer Science}{2000 - 2004}
+\resumeSubHeadingListEnd
+
+%-----------HOBBIES-----------------
+\section{Hobbies \& Projects}
+\resumeSubHeadingListStart
+  \resumeItem{Personal}{Practice martial arts (Karate, Muay Thai) and archery with a 55\# recurve bow, building discipline and focus that enhance problem-solving skills, and maintain \LaTeX\ resume and bash profile on GitHub, showcasing technical dedication and open-source engagement.}
+  \resumeItem{Running}{Participate in running events like the 2012 Tennessee Ragnar, developing endurance and teamwork that translate to resilience in managing complex engineering projects under pressure.}
+\resumeSubHeadingListEnd
+
+\end{document}
